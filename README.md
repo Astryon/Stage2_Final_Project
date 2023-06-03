@@ -188,6 +188,7 @@ Didapati nilai baris train set yaitu : 3231 dan nilai untuk baris test set yaitu
 ![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/d4e8a054-f967-4bf6-9845-980d04a2cc49)
 
 8.3. Split x dan y
+
 8.4. Oversampling menggunakan SMOTE, di dapati nilai sebagai berikut : 
 
 ![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/619e2342-393e-4fa0-a621-b1d4262870f2)
