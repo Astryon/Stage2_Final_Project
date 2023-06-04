@@ -85,21 +85,67 @@ Jumlah data duplikat :  0
 Tidak ada Duplikat Data
 
 ## 3. Handling Invalid Value
-3.1. Mengubah gender yang pengisian Fe Male menjadi Female
+3.1. Mengecek Data
 ```html
-Male      2765
-Female    1866
-Name: Gender, dtype: int64
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 4631 entries, 0 to 4887
+Data columns (total 20 columns):
+ #   Column                    Non-Null Count  Dtype  
+---  ------                    --------------  -----  
+ 0   CustomerID                4631 non-null   int64  
+ 1   ProdTaken                 4631 non-null   int64  
+ 2   Age                       4631 non-null   float64
+ 3   TypeofContact             4631 non-null   object 
+ 4   CityTier                  4631 non-null   int64  
+ 5   DurationOfPitch           4631 non-null   float64
+ 6   Occupation                4631 non-null   object 
+ 7   Gender                    4631 non-null   object 
+ 8   NumberOfPersonVisiting    4631 non-null   int64  
+ 9   NumberOfFollowups         4631 non-null   float64
+ 10  ProductPitched            4631 non-null   object 
+ 11  PreferredPropertyStar     4631 non-null   float64
+ 12  MaritalStatus             4631 non-null   object 
+ 13  NumberOfTrips             4631 non-null   float64
+ 14  Passport                  4631 non-null   int64  
+ 15  PitchSatisfactionScore    4631 non-null   int64  
+ 16  OwnCar                    4631 non-null   int64  
+ 17  NumberOfChildrenVisiting  4631 non-null   float64
+ 18  Designation               4631 non-null   object 
+ 19  MonthlyIncome             4631 non-null   float64
+dtypes: float64(7), int64(7), object(6)
+memory usage: 759.8+ KB
 ```
-Sehingga diperoleh data untuk Male (Pria) sebanyak 2765 Orang dan untuk Female (Wanita) sebanyak 1866 Orang
 
-3.2. Mengubah value Unmarried & Divorced menjadi Single
+3.2. Mengubah tipe data dari float menjadi integer pada data yang di pilih
 ```html
-Single     2427
-Married    2204
-Name: MaritalStatus, dtype: int64
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 4631 entries, 0 to 4887
+Data columns (total 20 columns):
+ #   Column                    Non-Null Count  Dtype 
+---  ------                    --------------  ----- 
+ 0   CustomerID                4631 non-null   int64 
+ 1   ProdTaken                 4631 non-null   int64 
+ 2   Age                       4631 non-null   int64 
+ 3   TypeofContact             4631 non-null   object
+ 4   CityTier                  4631 non-null   int64 
+ 5   DurationOfPitch           4631 non-null   int64 
+ 6   Occupation                4631 non-null   object
+ 7   Gender                    4631 non-null   object
+ 8   NumberOfPersonVisiting    4631 non-null   int64 
+ 9   NumberOfFollowups         4631 non-null   int64 
+ 10  ProductPitched            4631 non-null   object
+ 11  PreferredPropertyStar     4631 non-null   int64 
+ 12  MaritalStatus             4631 non-null   object
+ 13  NumberOfTrips             4631 non-null   int64 
+ 14  Passport                  4631 non-null   int64 
+ 15  PitchSatisfactionScore    4631 non-null   int64 
+ 16  OwnCar                    4631 non-null   int64 
+ 17  NumberOfChildrenVisiting  4631 non-null   int64 
+ 18  Designation               4631 non-null   object
+ 19  MonthlyIncome             4631 non-null   int64 
+dtypes: int64(14), object(6)
+memory usage: 759.8+ KB
 ```
-Sehingga diperoleh data untuk Single sebanyak 2427 Orang dan untuk Married sebanyak 2204 Orang
 
 ## 4. Handling Outliers
 ![Screenshot 2023-06-03 163423](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/524db16d-61a9-45f9-903d-2d152dd7cc40)
