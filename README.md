@@ -167,18 +167,8 @@ Name: Gender, dtype: int64
 
 
 ## 5. Handling Outliers
-![Screenshot 2023-06-03 163423](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/524db16d-61a9-45f9-903d-2d152dd7cc40)
 
-5.1. Terdapat Outliers pada Age, DurationOfPitch, dan MonthlyIncome. 
-
-5.2. Lalu dilakukan Filltering menggunakan Z-Score Sehingga diperoleh data sebagai berikut : 
-
-![Screenshot 2023-06-03 163800](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/d8b37d78-4655-4f1c-9469-0b5686ec3b86)
-
-   Didapati nilai Filltering menggunakan Z-Scorenya yaitu 4617. 
-
-5.3. Berikut ini merupakan Distribusi data setelan filtering Outliers : 
-![Screenshot 2023-06-03 163931](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/0d1b3f19-9ffc-4c09-a521-a50eefea775e)
+Karena kita akan menggunakan model non-linear / model yang robust terhadap outliers, maka kita tidak akan menghilangkan data outliers-nya.
 
 ## 6. Feature Transformation
 
@@ -204,15 +194,15 @@ Name: Gender, dtype: int64
 
 7.3. Product Pick 
 
-![Screenshot 2023-06-03 164512](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/82e2b907-2598-4cbe-9fb0-ed187bc2dbc6)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/e93fb87f-59d1-4397-8fe9-442571a47b9a)
 
 7.4. Membuat function Product dan menjalankannya 
 
 ![Screenshot 2023-06-03 164734](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/2b043d93-fea3-443f-8a9b-4278c334afb2)
 
-7.5. Membuat Function dan Kolom Baru pada status : 
+7.5. Membuat Function dan Kolom Baru : 
 
-![Screenshot 2023-06-03 164928](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/5a30e948-fa66-4c87-bc1d-6e9339c7b081)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/14eb2534-bcd0-43a1-bc3d-5805ad02da7d)
 
 7.6. Membuat Function Designation
 
@@ -220,14 +210,14 @@ Name: Gender, dtype: int64
 
 7.7. Hasil Datanya : 
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/6e23b50a-4701-42e7-9116-587594fd227b)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/2a55a0ef-b61e-4aa3-9a4d-e1924d22b6e8)
 
 ## 8. Feature Selection
 8.1. Visualisasi Korelasi Data : 
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/ffa529f4-76b3-4434-874f-1ca29c2da9f1)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/a9a65cba-cdd7-47a3-ab47-697a5e0cdf1b)
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/a3d37dbe-9813-4503-8752-b22f7dcc7012)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/d4d64264-1566-4014-940d-444b8946dcd7)
 
 8.2. Melakukan drop feature yang tidak terpakai atau korelasinya di bawah < 0,1 / -0,1 : 
 
@@ -235,32 +225,32 @@ Name: Gender, dtype: int64
 
 8.3. Melakukan ubah posisi ProdTaken ke paling kanan dan running kembali korelasinya : 
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/20965001-40b4-4645-963a-727f4ebbabc8)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/30623033-6d32-449c-b8c7-dab1377302df)
 
 8.4. Melakukan cek kembali 
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/a7d73591-d3de-44ed-84b5-96795b16b82f)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/7ff232af-4179-4a63-a334-65c3f73ac2e8)
 
 ## 9. Splitting Data & Handling Class Imbalance
 9.1. Membagi data train dan test (70:30)
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/af9800fc-41f0-4f44-b63d-6529698cd70d)
-
-Didapati nilai baris train set yaitu : 3231 dan nilai untuk baris test set yaitu : 1386 
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/505ae622-327b-4bef-ab88-88bc28249188)
 
 9.2. Cek fitur train set
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/d4e8a054-f967-4bf6-9845-980d04a2cc49)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/fbd41a16-a0b2-417f-b680-8cc7b2d0342e)
 
 9.3. Split x dan y
 
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/6eaf5131-0cda-43da-9f9a-966e860ae8fb)
+
 9.4. Oversampling menggunakan SMOTE, di dapati nilai sebagai berikut : 
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/619e2342-393e-4fa0-a621-b1d4262870f2)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/77d01e14-a129-464c-bc05-55509fab57d4)
 
 9.5. Berikut untuk jumlah baris train dan test untuk x dan y nya : 
 
-![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/037ffecd-b8ef-482a-b0f2-d116458023b5)
+![image](https://github.com/Astryon/Stage2_Final_Project/assets/68798868/bca48a42-a819-4d5b-82a6-8ef78e2fde3a)
 
 # Terima Kasih :) 🐼
 
